@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Management_System.Models.ApplicationUser>
+@{
+    ViewBag.Title = "Assigned_Course";
+}
+
+<h2>Assigned_Course</h2>
+<table class="table">
+    <thead>
+        <tr class="table">
+            <th scope="col">ID</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr class="table-bordered">
+            <td scope="col">@item.Id</td>
+            <td scope="col">@item.Email</td>
+            <td scope="col">@item.PasswordHash</td>
+        </tr>
+        }
+    </tbody>
+</table>
